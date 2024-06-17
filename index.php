@@ -10,6 +10,7 @@
 
 <body>
     <!-- Head[Start] -->
+
     <section class="text-gray-600 body-font">
         <div class="container px-5 py-24 mx-auto flex flex-wrap items-center">
             <div class="lg:w-3/5 md:w-1/2 md:pr-16 lg:pr-0 pr-0">
@@ -35,20 +36,23 @@
                         <input type="text" id="name" name="name" class="w-full bg-white rounded border border-gray-300 focus:border-red-500 focus:ring-2 focus:ring-red-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
                     </div>
                     <div class="relative mb-4">
-                        <label for="sales" class="leading-7 text-sm text-gray-600">売上</label>
+                        <label for="
+                        " class="leading-7 text-sm text-gray-600">売上（単位 万円）
+                        </label>
                         <input type="text" id="sales" name="sales" class="w-full bg-white rounded border border-gray-300 focus:border-red-500 focus:ring-2 focus:ring-red-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
                     </div>
 
-                    <button class="text-white bg-red-500 border-0 py-2 px-8 focus:outline-none hover:bg-red-600 rounded text-lg">送信</button>
-                    <div class="flex pl-4 mt-4 lg:w-2/3 w-full mx-auto">
-                        <a class="text-red-500 inline-flex items-center md:mb-2 lg:mb-0">イベント管理画面へ
-                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                                <path d="M5 12h14M12 5l7 7-7 7"></path>
-                            </svg>
-                        </a>
+                    <div class="submit">
+                        <button class="text-white bg-red-500 border-0 py-2 px-8 focus:outline-none hover:bg-red-600 rounded text-lg">送信</button>
+                    </div>
 
-                        <!-- <p class="text-xs text-gray-500 mt-3">Literally you probably haven't heard of them jean shorts.</p> -->
+                    <!-- <p class="text-xs text-gray-500 mt-3">Literally you probably haven't heard of them jean shorts.</p> -->
                 </form>
+                <!-- <div class="date">
+                    <a href="select.php" class="text-white bg-red-500 border-0 py-2 px-8 focus:outline-none hover:bg-red-600 rounded text-lg">データ一覧</a>
+                
+                </div> -->
+    
                 <!-- Main[End] -->
 
             </div>
