@@ -1,4 +1,7 @@
 <?php
+// セッション開始
+session_start();
+
 $id = $_GET["id"]; //?id~**を受け取る
 include("funcs.php");
 sschk();

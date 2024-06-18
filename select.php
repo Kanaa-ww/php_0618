@@ -66,7 +66,7 @@ $json = json_encode($values,JSON_UNESCAPED_UNICODE);
         </thead>
         <tbody>
           <?php foreach($values as $v){ ?>
-          <tr>
+           <tr>
             <td class="px-4 py-3"><?=$v["event"]?></td>
             <td class="px-4 py-3"><?=$v["date"]?></td>
             <td class="px-4 py-3"><?=$v["name"]?></td>
@@ -74,9 +74,18 @@ $json = json_encode($values,JSON_UNESCAPED_UNICODE);
             <!-- <td class="px-4 py-3">5 Mb/s</td>
             <td class="px-4 py-3">15 GB</td>
             <td class="px-4 py-3 text-lg text-gray-900">Free</td> -->
-            <td class="w-10 text-center">
+            <!-- <td class="w-10 text-center">
               <input name="plan" type="radio">
+            </td> -->
+            <?php if($_SESSION["kanri_flg"]=="1"){ ?>
+            <td class="w-10 text-center">
+            <a href="detail.php?id=<?=$v['id']?>" class="text-blue-500">更新</a>
             </td>
+            </td>
+            <td class="w-10 text-center">
+              <a href="delete.php?id=<?=$v['id']?>" onclick="return confirm('本当に削除しますか？');" class="text-red-500">削除</a>
+            </td>
+            <?php } ?> 
           </tr>
           <?php } ?>
         </tbody>

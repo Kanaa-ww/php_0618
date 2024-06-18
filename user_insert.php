@@ -3,7 +3,7 @@
 session_start();
 
 include "funcs.php";
-// sschk();
+sschk();
 
 //1. POSTデータ取得
 $name      = filter_input( INPUT_POST, "name" );
