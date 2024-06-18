@@ -2,8 +2,6 @@
 //$_SESSION使うよ！
 session_start();
 
-//※htdocsと同じ階層に「includes」を作成してfuncs.phpを入れましょう！
-//include "../../includes/funcs.php";
 include "funcs.php";
 // sschk();
 
@@ -30,5 +28,5 @@ $status = $stmt->execute();
 if ($status == false) {
     sql_error($stmt);
 } else {
-    redirect("user.php");
+    redirect("login.php");
 }
